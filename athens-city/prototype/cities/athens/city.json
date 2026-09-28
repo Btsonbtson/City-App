@@ -1,0 +1,146 @@
+{
+  "id": "athens",
+  "name": "Athens",
+  "localName": "Αθήνα",
+  "lang": "el",
+  "speakLang": "el-GR",
+  "country": "Greece",
+  "tagline": "Marble hills, late dinners, and a green cross on the corner.",
+  "timezone": "Europe/Athens",
+  "accent": "#c46a3a",
+  "center": { "lat": 37.9755, "lng": 23.7348, "label": "Syntagma" },
+  "hero": ["acropolis.jpg", "lycabettus.jpg", "plaka.jpg", "stadium.jpg"],
+  "youTitle": "Your Athens",
+  "filters": [
+    ["all", "All"],
+    ["sights", "Sights"],
+    ["museums", "Museums"],
+    ["hills", "Hills and parks"],
+    ["neighbourhoods", "Neighbourhoods"],
+    ["study", "Study"]
+  ],
+  "phraseFilters": [
+    ["help", "Help and health"],
+    ["everyday", "Everyday"],
+    ["around", "Getting around"],
+    ["food", "Café and food"]
+  ],
+  "photos": [
+    { "file": "acropolis.jpg", "caption": "The Acropolis from Philopappos", "credit": "A. Savin, CC BY-SA 3.0, via Wikimedia Commons" },
+    { "file": "lycabettus.jpg", "caption": "The city from Lycabettus", "credit": "Wikimedia Commons" },
+    { "file": "plaka.jpg", "caption": "A lane in Plaka", "credit": "Laurens R. Krol, CC BY 4.0, via Wikimedia Commons" },
+    { "file": "stadium.jpg", "caption": "The Panathenaic Stadium", "credit": "Wikimedia Commons" },
+    { "file": "monastiraki.jpg", "caption": "Monastiraki", "credit": "Jakub Hałun, CC BY 4.0, via Wikimedia Commons" },
+    { "file": "agora.jpg", "caption": "The Acropolis from the Ancient Agora", "credit": "Wikimedia Commons" }
+  ],
+  "places": [
+    { "id": "acropolis", "name": "Acropolis", "local": "Ακρόπολη", "kind": "Archaeological site", "area": "Central Athens", "cat": "sights", "photo": "acropolis.jpg", "lat": 37.9715, "lng": 23.7267, "query": "Acropolis, Athens", "blurb": "The ancient citadel above the city, home of the Parthenon." },
+    { "id": "acro-museum", "name": "Acropolis Museum", "local": "Μουσείο Ακρόπολης", "kind": "Museum", "area": "Makrygianni", "cat": "museums", "lat": 37.9685, "lng": 23.7285, "query": "Acropolis Museum, Athens", "blurb": "Finds from the Acropolis, built over a visible excavation." },
+    { "id": "agora", "name": "Ancient Agora", "local": "Αρχαία Αγορά", "kind": "Archaeological site", "area": "Monastiraki", "cat": "sights", "photo": "agora.jpg", "lat": 37.9753, "lng": 23.7226, "query": "Ancient Agora of Athens", "blurb": "The civic heart of ancient Athens, with the Temple of Hephaestus, and the Acropolis above." },
+    { "id": "nam", "name": "National Archaeological Museum", "local": "Εθνικό Αρχαιολογικό Μουσείο", "kind": "Museum", "area": "Exarchia", "cat": "museums", "lat": 37.989, "lng": 23.7326, "query": "National Archaeological Museum, Athens", "blurb": "Greece's largest archaeological collection." },
+    { "id": "kerameikos", "name": "Kerameikos", "local": "Κεραμεικός", "kind": "Archaeological site", "area": "Kerameikos", "cat": "sights", "lat": 37.9784, "lng": 23.7186, "query": "Kerameikos, Athens", "blurb": "The ancient cemetery and potters' quarter, often quieter than the Agora." },
+    { "id": "stadium", "name": "Panathenaic Stadium", "local": "Παναθηναϊκό Στάδιο", "kind": "Historic stadium", "area": "Pangrati", "cat": "sights", "photo": "stadium.jpg", "lat": 37.9684, "lng": 23.7414, "query": "Panathenaic Stadium, Athens", "blurb": "The marble stadium of the first modern Olympics in 1896." },
+    { "id": "lycabettus", "name": "Lycabettus Hill", "local": "Λόφος Λυκαβηττού", "kind": "Hill and viewpoint", "area": "Kolonaki", "cat": "hills", "photo": "lycabettus.jpg", "lat": 37.9819, "lng": 23.7433, "query": "Lycabettus Hill, Athens", "blurb": "The highest point in central Athens, with views to the sea." },
+    { "id": "philopappos", "name": "Philopappos Hill", "local": "Λόφος Φιλοπάππου", "kind": "Hill and park", "area": "Koukaki", "cat": "hills", "lat": 37.9674, "lng": 23.7214, "query": "Philopappos Hill, Athens", "blurb": "Pine-covered paths facing the Acropolis." },
+    { "id": "garden", "name": "National Garden", "local": "Εθνικός Κήπος", "kind": "Park", "area": "Syntagma", "cat": "hills", "lat": 37.9734, "lng": 23.7376, "query": "National Garden, Athens", "blurb": "Shaded public garden next to Parliament." },
+    { "id": "plaka", "name": "Plaka", "local": "Πλάκα", "kind": "Neighbourhood", "area": "Central Athens", "cat": "neighbourhoods", "photo": "plaka.jpg", "lat": 37.9724, "lng": 23.7305, "query": "Plaka, Athens", "blurb": "The old town's stepped lanes below the Acropolis." },
+    { "id": "monastiraki", "name": "Monastiraki", "local": "Μοναστηράκι", "kind": "Neighbourhood and flea market", "area": "Central Athens", "cat": "neighbourhoods", "photo": "monastiraki.jpg", "lat": 37.9756, "lng": 23.7257, "query": "Monastiraki Square, Athens", "blurb": "Busy square, metro hub and weekend flea market." },
+    { "id": "varvakios", "name": "Central Market", "local": "Βαρβάκειος Αγορά", "kind": "Food market", "area": "Omonia", "cat": "neighbourhoods", "lat": 37.9802, "lng": 23.7273, "query": "Varvakios Agora, Athens", "blurb": "The city's central meat, fish and produce market." },
+    { "id": "nkua", "name": "University of Athens", "local": "Εθνικό και Καποδιστριακό Πανεπιστήμιο", "kind": "University", "area": "Panepistimiou", "cat": "study", "lat": 37.9803, "lng": 23.733, "query": "National and Kapodistrian University of Athens", "blurb": "The historic Propylaea on Panepistimiou Street." },
+    { "id": "ntua", "name": "National Technical University", "local": "Εθνικό Μετσόβιο Πολυτεχνείο", "kind": "University", "area": "Patision", "cat": "study", "lat": 37.9878, "lng": 23.7312, "query": "National Technical University of Athens, Patision", "blurb": "The historic campus on Patision Street." }
+  ],
+  "walks": [
+    {
+      "id": "plaka",
+      "title": "Down from the rock",
+      "minutes": 50,
+      "photo": "plaka.jpg",
+      "blurb": "From the Acropolis slopes, through the lanes of Plaka, and out into Monastiraki.",
+      "stops": [
+        { "name": "Acropolis", "lat": 37.9715, "lng": 23.7267 },
+        { "name": "Plaka", "lat": 37.9724, "lng": 23.7305 },
+        { "name": "Monastiraki", "lat": 37.9756, "lng": 23.7257 }
+      ]
+    },
+    {
+      "id": "garden",
+      "title": "Syntagma to the stadium",
+      "minutes": 30,
+      "photo": "stadium.jpg",
+      "blurb": "Through the National Garden and out to the marble stadium.",
+      "stops": [
+        { "name": "Syntagma", "lat": 37.9755, "lng": 23.7348 },
+        { "name": "National Garden", "lat": 37.9734, "lng": 23.7376 },
+        { "name": "Panathenaic Stadium", "lat": 37.9684, "lng": 23.7414 }
+      ]
+    }
+  ],
+  "phrases": [
+    { "cat": "help", "en": "Help!", "local": "Βοήθεια!", "tr": "Voíthia!" },
+    { "cat": "help", "en": "Please call an ambulance", "local": "Καλέστε ασθενοφόρο, παρακαλώ!", "tr": "Kaléste asthenofóro, parakaló!" },
+    { "cat": "help", "en": "I need a doctor", "local": "Χρειάζομαι γιατρό.", "tr": "Chriázome yatró." },
+    { "cat": "help", "en": "Where is the nearest pharmacy?", "local": "Πού είναι το πλησιέστερο φαρμακείο;", "tr": "Pou íne to plisiéstero farmakío?", "note": "Greek uses ; as its question mark." },
+    { "cat": "help", "en": "I'm allergic to…", "local": "Είμαι αλλεργικός / αλλεργική σε…", "tr": "Íme alergikós / alergikí se…", "note": "First form if you're male, second if you're female." },
+    { "cat": "help", "en": "It hurts here", "local": "Πονάει εδώ.", "tr": "Ponái edó." },
+    { "cat": "everyday", "en": "Hello (polite)", "local": "Γεια σας", "tr": "Ya sas", "note": "Use with strangers and older people. With friends: Γεια σου (ya sou)." },
+    { "cat": "everyday", "en": "Thank you", "local": "Ευχαριστώ", "tr": "Efcharistó" },
+    { "cat": "everyday", "en": "Please / you're welcome", "local": "Παρακαλώ", "tr": "Parakaló" },
+    { "cat": "everyday", "en": "Yes / No", "local": "Ναι / Όχι", "tr": "Ne / Óchi", "note": "Ναι (ne) means yes, which catches many newcomers out." },
+    { "cat": "everyday", "en": "Excuse me / sorry", "local": "Συγγνώμη", "tr": "Signómi" },
+    { "cat": "everyday", "en": "I don't speak Greek", "local": "Δεν μιλάω ελληνικά.", "tr": "Den miláo elliniká." },
+    { "cat": "everyday", "en": "Do you speak English?", "local": "Μιλάτε αγγλικά;", "tr": "Miláte angliká?" },
+    { "cat": "around", "en": "Where is the metro?", "local": "Πού είναι το μετρό;", "tr": "Pou íne to metró?" },
+    { "cat": "around", "en": "One ticket, please", "local": "Ένα εισιτήριο, παρακαλώ.", "tr": "Éna isitírio, parakaló." },
+    { "cat": "around", "en": "Please take me to this address", "local": "Πηγαίνετέ με σε αυτή τη διεύθυνση, παρακαλώ.", "tr": "Pigénete me se aftí ti diéfthinsi, parakaló." },
+    { "cat": "around", "en": "Where do I get off?", "local": "Πού πρέπει να κατέβω;", "tr": "Pou prépi na katévo?" },
+    { "cat": "food", "en": "The bill, please", "local": "Τον λογαριασμό, παρακαλώ.", "tr": "Ton logariasmó, parakaló." },
+    { "cat": "food", "en": "Water, please", "local": "Νερό, παρακαλώ.", "tr": "Neró, parakaló." },
+    { "cat": "food", "en": "Coffee without sugar", "local": "Σκέτο", "tr": "Skéto", "note": "Order coffee by sweetness: σκέτο (none), μέτριο (medium), γλυκό (sweet)." },
+    { "cat": "food", "en": "How much is it?", "local": "Πόσο κάνει;", "tr": "Póso káni?" }
+  ],
+  "emergency": {
+    "primary": { "n": "112", "label": "Any emergency", "note": "The European emergency number. Free from any phone, even without credit." },
+    "othersNote": "To be verified",
+    "others": [
+      { "n": "166", "en": "Ambulance (EKAB)" },
+      { "n": "100", "en": "Police" },
+      { "n": "199", "en": "Fire service" },
+      { "n": "1571", "en": "Tourist police" },
+      { "n": "108", "en": "Coast guard" }
+    ]
+  },
+  "pharmacy": {
+    "kind": "sample",
+    "rotaFile": "rota.json",
+    "source": "Source: Φαρμακευτικός Σύλλογος Αττικής (fsa-efimeries.gr). Rota published 28 Sep 2026, 08:20. Sample of 22; distances appear once pharmacies are geocoded.",
+    "windows": [
+      { "id": "now", "label": "Now" },
+      { "id": "2026-09-28T21:30:00+03:00", "label": "21:30" },
+      { "id": "2026-09-29T03:00:00+03:00", "label": "03:00" }
+    ]
+  },
+  "hospitals": "Athens hospitals take emergencies on a rotating schedule. Until this is live, call 166 for an ambulance or 112 for any emergency.",
+  "changes": [
+    { "t": "08:20", "title": "Pharmacy rota published", "body": "22 pharmacies on duty in the sample, 11 of them overnight." },
+    { "t": "08:20", "title": "Kolonaki pharmacy on duty tonight", "body": "Σόλωνος 54 is open 08:00 to 14:00 and 17:00 until 08:00 tomorrow." }
+  ],
+  "universities": [
+    "National and Kapodistrian University of Athens",
+    "National Technical University of Athens",
+    "Athens University of Economics and Business",
+    "Panteion University",
+    "University of West Attica"
+  ],
+  "uniPlace": {
+    "National and Kapodistrian University of Athens": "nkua",
+    "National Technical University of Athens": "ntua"
+  },
+  "checklist": [
+    ["uni", "Add your university"],
+    ["sos", "Open help once, so the numbers are familiar"],
+    ["phrases", "Learn five phrases"],
+    ["place", "Save a place to visit this week"]
+  ],
+  "addressHint": "Your address, as written in Greek. It stays on this phone.",
+  "addressPlaceholder": "π.χ. Σόλωνος 54, Κολωνάκι"
+}

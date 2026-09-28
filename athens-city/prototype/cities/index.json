@@ -1,0 +1,20 @@
+{
+  "title": "CITY GUIDE",
+  "cities": [
+    {
+      "id": "turin",
+      "name": "Torino",
+      "country": "Italy",
+      "line": "Arcades, the Mole, and the Alps.",
+      "photo": "cities/turin/photos/mole-alps.jpg"
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "local": "Αθήνα",
+      "country": "Greece",
+      "line": "The Acropolis above the old town.",
+      "photo": "cities/athens/photos/acropolis.jpg"
+    }
+  ]
+}

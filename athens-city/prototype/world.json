@@ -1,0 +1,146 @@
+{
+  "countries": [
+    {"code": "AR", "lang": "es", "tz": "America/Argentina/Buenos_Aires", "cities": [
+      {"id": "buenos-aires", "name": "Buenos Aires", "lat": -34.6037, "lng": -58.3816, "wiki": "Buenos Aires"}
+    ]},
+    {"code": "AT", "lang": "de", "tz": "Europe/Vienna", "cities": [
+      {"id": "vienna", "name": "Wien", "lat": 48.2082, "lng": 16.3738, "wiki": "Vienna"},
+      {"id": "salzburg", "name": "Salzburg", "lat": 47.8095, "lng": 13.055, "wiki": "Salzburg"}
+    ]},
+    {"code": "AU", "lang": "en", "tz": "Australia/Sydney", "cities": [
+      {"id": "sydney", "name": "Sydney", "lat": -33.8688, "lng": 151.2093, "wiki": "Sydney", "tz": "Australia/Sydney"},
+      {"id": "melbourne", "name": "Melbourne", "lat": -37.8136, "lng": 144.9631, "wiki": "Melbourne", "tz": "Australia/Melbourne"}
+    ]},
+    {"code": "BE", "lang": "fr", "tz": "Europe/Brussels", "cities": [
+      {"id": "brussels", "name": "Bruxelles", "lat": 50.8503, "lng": 4.3517, "wiki": "Brussels"},
+      {"id": "bruges", "name": "Brugge", "lat": 51.2093, "lng": 3.2247, "wiki": "Bruges"}
+    ]},
+    {"code": "BR", "lang": "pt", "tz": "America/Sao_Paulo", "cities": [
+      {"id": "rio", "name": "Rio de Janeiro", "lat": -22.9068, "lng": -43.1729, "wiki": "Rio de Janeiro"},
+      {"id": "sao-paulo", "name": "São Paulo", "lat": -23.5558, "lng": -46.6396, "wiki": "São Paulo"}
+    ]},
+    {"code": "CA", "lang": "en", "tz": "America/Toronto", "cities": [
+      {"id": "toronto", "name": "Toronto", "lat": 43.6532, "lng": -79.3832, "wiki": "Toronto", "tz": "America/Toronto"},
+      {"id": "montreal", "name": "Montréal", "lat": 45.5017, "lng": -73.5673, "wiki": "Montreal", "tz": "America/Toronto"},
+      {"id": "vancouver", "name": "Vancouver", "lat": 49.2827, "lng": -123.1207, "wiki": "Vancouver", "tz": "America/Vancouver"}
+    ]},
+    {"code": "CH", "lang": "de", "tz": "Europe/Zurich", "cities": [
+      {"id": "zurich", "name": "Zürich", "lat": 47.3769, "lng": 8.5417, "wiki": "Zürich"},
+      {"id": "geneva", "name": "Genève", "lat": 46.2044, "lng": 6.1432, "wiki": "Geneva"}
+    ]},
+    {"code": "CN", "lang": "en", "tz": "Asia/Shanghai", "cities": [
+      {"id": "shanghai", "name": "Shanghai", "lat": 31.2304, "lng": 121.4737, "wiki": "Shanghai"},
+      {"id": "beijing", "name": "Beijing", "lat": 39.9042, "lng": 116.4074, "wiki": "Beijing"}
+    ]},
+    {"code": "CZ", "lang": "en", "tz": "Europe/Prague", "cities": [
+      {"id": "prague", "name": "Praha", "lat": 50.0755, "lng": 14.4378, "wiki": "Prague"}
+    ]},
+    {"code": "DE", "lang": "de", "tz": "Europe/Berlin", "cities": [
+      {"id": "berlin", "name": "Berlin", "lat": 52.52, "lng": 13.405, "wiki": "Berlin"},
+      {"id": "munich", "name": "München", "lat": 48.1351, "lng": 11.582, "wiki": "Munich"},
+      {"id": "hamburg", "name": "Hamburg", "lat": 53.5511, "lng": 9.9937, "wiki": "Hamburg"},
+      {"id": "cologne", "name": "Köln", "lat": 50.9375, "lng": 6.9603, "wiki": "Cologne"}
+    ]},
+    {"code": "DK", "lang": "en", "tz": "Europe/Copenhagen", "cities": [
+      {"id": "copenhagen", "name": "København", "lat": 55.6761, "lng": 12.5683, "wiki": "Copenhagen"}
+    ]},
+    {"code": "EG", "lang": "en", "tz": "Africa/Cairo", "cities": [
+      {"id": "cairo", "name": "Cairo", "lat": 30.0444, "lng": 31.2357, "wiki": "Cairo"}
+    ]},
+    {"code": "ES", "lang": "es", "tz": "Europe/Madrid", "cities": [
+      {"id": "madrid", "name": "Madrid", "lat": 40.4168, "lng": -3.7038, "wiki": "Madrid"},
+      {"id": "barcelona", "name": "Barcelona", "lat": 41.3874, "lng": 2.1686, "wiki": "Barcelona"},
+      {"id": "seville", "name": "Sevilla", "lat": 37.3891, "lng": -5.9845, "wiki": "Seville"},
+      {"id": "valencia", "name": "Valencia", "lat": 39.4699, "lng": -0.3763, "wiki": "Valencia"}
+    ]},
+    {"code": "FR", "lang": "fr", "tz": "Europe/Paris", "cities": [
+      {"id": "paris", "name": "Paris", "lat": 48.8566, "lng": 2.3522, "wiki": "Paris"},
+      {"id": "lyon", "name": "Lyon", "lat": 45.764, "lng": 4.8357, "wiki": "Lyon"},
+      {"id": "marseille", "name": "Marseille", "lat": 43.2965, "lng": 5.3698, "wiki": "Marseille"},
+      {"id": "nice", "name": "Nice", "lat": 43.7102, "lng": 7.262, "wiki": "Nice"}
+    ]},
+    {"code": "GB", "lang": "en", "tz": "Europe/London", "cities": [
+      {"id": "london", "name": "London", "lat": 51.5074, "lng": -0.1278, "wiki": "London"},
+      {"id": "edinburgh", "name": "Edinburgh", "lat": 55.9533, "lng": -3.1883, "wiki": "Edinburgh"},
+      {"id": "manchester", "name": "Manchester", "lat": 53.4808, "lng": -2.2426, "wiki": "Manchester"}
+    ]},
+    {"code": "GR", "lang": "el", "tz": "Europe/Athens", "cities": [
+      {"id": "athens", "name": "Αθήνα", "lat": 37.9838, "lng": 23.7275, "wiki": "Athens", "pack": "athens"},
+      {"id": "thessaloniki", "name": "Θεσσαλονίκη", "lat": 40.6401, "lng": 22.9444, "wiki": "Thessaloniki"},
+      {"id": "heraklion", "name": "Ηράκλειο", "lat": 35.3387, "lng": 25.1442, "wiki": "Heraklion"},
+      {"id": "patras", "name": "Πάτρα", "lat": 38.2466, "lng": 21.7346, "wiki": "Patras"}
+    ]},
+    {"code": "HR", "lang": "en", "tz": "Europe/Zagreb", "cities": [
+      {"id": "zagreb", "name": "Zagreb", "lat": 45.815, "lng": 15.9819, "wiki": "Zagreb"},
+      {"id": "dubrovnik", "name": "Dubrovnik", "lat": 42.6507, "lng": 18.0944, "wiki": "Dubrovnik"}
+    ]},
+    {"code": "HU", "lang": "en", "tz": "Europe/Budapest", "cities": [
+      {"id": "budapest", "name": "Budapest", "lat": 47.4979, "lng": 19.0402, "wiki": "Budapest"}
+    ]},
+    {"code": "IE", "lang": "en", "tz": "Europe/Dublin", "cities": [
+      {"id": "dublin", "name": "Dublin", "lat": 53.3498, "lng": -6.2603, "wiki": "Dublin"}
+    ]},
+    {"code": "IN", "lang": "en", "tz": "Asia/Kolkata", "cities": [
+      {"id": "delhi", "name": "Delhi", "lat": 28.6139, "lng": 77.209, "wiki": "Delhi"},
+      {"id": "mumbai", "name": "Mumbai", "lat": 19.076, "lng": 72.8777, "wiki": "Mumbai"}
+    ]},
+    {"code": "IT", "lang": "it", "tz": "Europe/Rome", "cities": [
+      {"id": "turin", "name": "Torino", "lat": 45.0705, "lng": 7.6862, "wiki": "Turin", "pack": "turin"},
+      {"id": "rome", "name": "Roma", "lat": 41.8902, "lng": 12.4922, "wiki": "Rome"},
+      {"id": "milan", "name": "Milano", "lat": 45.4642, "lng": 9.19, "wiki": "Milan"},
+      {"id": "florence", "name": "Firenze", "lat": 43.7696, "lng": 11.2558, "wiki": "Florence"},
+      {"id": "naples", "name": "Napoli", "lat": 40.8518, "lng": 14.2681, "wiki": "Naples"},
+      {"id": "venice", "name": "Venezia", "lat": 45.4408, "lng": 12.3155, "wiki": "Venice"}
+    ]},
+    {"code": "JP", "lang": "ja", "tz": "Asia/Tokyo", "cities": [
+      {"id": "tokyo", "name": "東京", "lat": 35.6762, "lng": 139.6503, "wiki": "Tokyo"},
+      {"id": "kyoto", "name": "京都", "lat": 35.0116, "lng": 135.7681, "wiki": "Kyoto"},
+      {"id": "osaka", "name": "大阪", "lat": 34.6937, "lng": 135.5023, "wiki": "Osaka"}
+    ]},
+    {"code": "KR", "lang": "en", "tz": "Asia/Seoul", "cities": [
+      {"id": "seoul", "name": "Seoul", "lat": 37.5665, "lng": 126.978, "wiki": "Seoul"}
+    ]},
+    {"code": "MA", "lang": "fr", "tz": "Africa/Casablanca", "cities": [
+      {"id": "marrakesh", "name": "Marrakech", "lat": 31.6295, "lng": -7.9811, "wiki": "Marrakesh"},
+      {"id": "casablanca", "name": "Casablanca", "lat": 33.5731, "lng": -7.5898, "wiki": "Casablanca"}
+    ]},
+    {"code": "MX", "lang": "es", "tz": "America/Mexico_City", "cities": [
+      {"id": "mexico-city", "name": "Ciudad de México", "lat": 19.4326, "lng": -99.1332, "wiki": "Mexico City"},
+      {"id": "cancun", "name": "Cancún", "lat": 21.1619, "lng": -86.8515, "wiki": "Cancún"}
+    ]},
+    {"code": "NL", "lang": "en", "tz": "Europe/Amsterdam", "cities": [
+      {"id": "amsterdam", "name": "Amsterdam", "lat": 52.3676, "lng": 4.9041, "wiki": "Amsterdam"},
+      {"id": "rotterdam", "name": "Rotterdam", "lat": 51.9244, "lng": 4.4777, "wiki": "Rotterdam"}
+    ]},
+    {"code": "NO", "lang": "en", "tz": "Europe/Oslo", "cities": [
+      {"id": "oslo", "name": "Oslo", "lat": 59.9139, "lng": 10.7522, "wiki": "Oslo"}
+    ]},
+    {"code": "PL", "lang": "en", "tz": "Europe/Warsaw", "cities": [
+      {"id": "warsaw", "name": "Warszawa", "lat": 52.2297, "lng": 21.0122, "wiki": "Warsaw"},
+      {"id": "krakow", "name": "Kraków", "lat": 50.0647, "lng": 19.945, "wiki": "Kraków"}
+    ]},
+    {"code": "PT", "lang": "pt", "tz": "Europe/Lisbon", "cities": [
+      {"id": "lisbon", "name": "Lisboa", "lat": 38.7223, "lng": -9.1393, "wiki": "Lisbon"},
+      {"id": "porto", "name": "Porto", "lat": 41.1579, "lng": -8.6291, "wiki": "Porto"}
+    ]},
+    {"code": "RO", "lang": "en", "tz": "Europe/Bucharest", "cities": [
+      {"id": "bucharest", "name": "București", "lat": 44.4268, "lng": 26.1025, "wiki": "Bucharest"}
+    ]},
+    {"code": "SE", "lang": "en", "tz": "Europe/Stockholm", "cities": [
+      {"id": "stockholm", "name": "Stockholm", "lat": 59.3293, "lng": 18.0686, "wiki": "Stockholm"}
+    ]},
+    {"code": "TH", "lang": "en", "tz": "Asia/Bangkok", "cities": [
+      {"id": "bangkok", "name": "Bangkok", "lat": 13.7563, "lng": 100.5018, "wiki": "Bangkok"}
+    ]},
+    {"code": "TR", "lang": "tr", "tz": "Europe/Istanbul", "cities": [
+      {"id": "istanbul", "name": "İstanbul", "lat": 41.0082, "lng": 28.9784, "wiki": "Istanbul"},
+      {"id": "ankara", "name": "Ankara", "lat": 39.9334, "lng": 32.8597, "wiki": "Ankara"}
+    ]},
+    {"code": "US", "lang": "en", "tz": "America/New_York", "cities": [
+      {"id": "new-york", "name": "New York", "lat": 40.7128, "lng": -74.006, "wiki": "New York City", "tz": "America/New_York"},
+      {"id": "los-angeles", "name": "Los Angeles", "lat": 34.0522, "lng": -118.2437, "wiki": "Los Angeles", "tz": "America/Los_Angeles"},
+      {"id": "chicago", "name": "Chicago", "lat": 41.8781, "lng": -87.6298, "wiki": "Chicago", "tz": "America/Chicago"},
+      {"id": "san-francisco", "name": "San Francisco", "lat": 37.7749, "lng": -122.4194, "wiki": "San Francisco", "tz": "America/Los_Angeles"}
+    ]}
+  ]
+}

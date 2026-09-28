@@ -1,0 +1,305 @@
+{
+  "id": "turin",
+  "name": "Torino",
+  "localName": "Torino",
+  "lang": "it",
+  "speakLang": "it-IT",
+  "country": "Italy",
+  "tagline": "A city of arcades, with the Alps on the horizon.",
+  "timezone": "Europe/Rome",
+  "accent": "#d7b56d",
+  "center": { "lat": 45.0705, "lng": 7.6862, "label": "Piazza Castello" },
+  "hero": ["mole-alps.jpg", "mole-night.jpg", "via-roma.jpg", "piazza-san-carlo.jpg"],
+  "youTitle": "Your Torino",
+  "filters": [
+    ["all", "All"],
+    ["sights", "Sights"],
+    ["museums", "Museums"],
+    ["squares", "Squares"],
+    ["parks", "Parks"],
+    ["cafes", "Cafés"],
+    ["galleries", "Galleries"],
+    ["night", "Night"],
+    ["study", "Study"],
+    ["streets", "Streets"]
+  ],
+  "phraseFilters": [
+    ["help", "Help"],
+    ["everyday", "Everyday"],
+    ["around", "Getting around"],
+    ["food", "Café and food"]
+  ],
+  "photos": [
+    { "file": "mole-alps.jpg", "caption": "The Mole and the Alps", "credit": "Photograph from the Turin folder" },
+    { "file": "mole-night.jpg", "caption": "Mole Antonelliana at night", "credit": "Samuele Giglio, Unsplash — from the Turin folder" },
+    { "file": "via-roma.jpg", "caption": "Via Roma at dusk", "credit": "Wendy Dekker, Unsplash — from the Turin folder" },
+    { "file": "piazza-san-carlo.jpg", "caption": "Piazza San Carlo", "credit": "Benjamin Smith, CC BY-SA 4.0, via Wikimedia Commons" },
+    { "file": "piazza-castello.jpg", "caption": "Piazza Castello", "credit": "Photograph from the Turin folder" },
+    { "file": "palazzo-madama.jpg", "caption": "Palazzo Madama", "credit": "Photograph from the Turin folder" },
+    { "file": "galleria.jpg", "caption": "Galleria Subalpina", "credit": "Photograph from the Turin folder" },
+    { "file": "caffe-san-carlo.jpg", "caption": "Inside Caffè San Carlo", "credit": "Photograph from the Turin folder" },
+    { "file": "gran-madre.jpg", "caption": "Gran Madre di Dio, across the Po", "credit": "Lisa van Vliet, Unsplash — from the Turin folder" },
+    { "file": "piazza-vittorio.jpg", "caption": "Piazza Vittorio Veneto", "credit": "Photograph from the Turin folder" },
+    { "file": "egizio.jpg", "caption": "Museo Egizio", "credit": "Georgius LXXXIX, public domain, via Wikimedia Commons" },
+    { "file": "albertina-facade.jpg", "caption": "Accademia Albertina", "credit": "Photograph from the Accademia Albertina folder" },
+    { "file": "albertina-rotonda.jpg", "caption": "La Rotonda di Talucchi", "credit": "Photograph from the Accademia Albertina folder" },
+    { "file": "albertina-hall.jpg", "caption": "A hall in the Albertina", "credit": "Photograph from the Accademia Albertina folder" },
+    { "file": "albertina-stairs.jpg", "caption": "The Albertina staircase", "credit": "Photograph from the Accademia Albertina folder" },
+    { "file": "porta-palatina.jpg", "caption": "Porta Palatina", "credit": "TorinoDoc, CC BY-SA 4.0, via Wikimedia Commons" },
+    { "file": "superga.jpg", "caption": "Basilica di Superga", "credit": "Paris Orlando, CC BY-SA 4.0, via Wikimedia Commons" },
+    { "file": "borgo.jpg", "caption": "Borgo Medievale", "credit": "Cielo99, CC BY-SA 4.0, via Wikimedia Commons" },
+    { "file": "valentino.jpg", "caption": "Parco del Valentino", "credit": "Benjamin Smith, CC BY-SA 4.0, via Wikimedia Commons" },
+    { "file": "palazzo-reale.jpg", "caption": "Inside Palazzo Reale", "credit": "Phyrexian, CC BY-SA 4.0, via Wikimedia Commons" },
+    { "file": "mauto.jpg", "caption": "The car museum", "credit": "Photograph from the Turin folder" },
+    { "file": "farmacia-masino.jpg", "caption": "Regia Farmacia Masino", "credit": "Alexander Schimmeck, Unsplash — from the Turin folder" },
+    { "file": "porta-nuova.jpg", "caption": "Porta Nuova", "credit": "Mirko Mina, Unsplash — from the Turin folder" },
+    { "file": "mole-po.jpg", "caption": "The Mole from the river", "credit": "Photograph from the Turin folder" },
+    { "file": "mole-golden.jpg", "caption": "Rooftops in late light", "credit": "Photograph from the Turin folder" },
+    { "file": "portico-facade.jpg", "caption": "A portico facade", "credit": "Photograph from the Turin folder" }
+  ],
+  "places": [
+    { "id": "mole", "name": "Mole Antonelliana", "local": "Mole Antonelliana", "kind": "Tower and cinema museum", "area": "Centro", "cat": "sights", "photo": "mole-alps.jpg", "lat": 45.069, "lng": 7.6934, "query": "Mole Antonelliana, Torino", "blurb": "Turin's skyline. The lift to the spire looks over the roofs to the Alps." },
+    { "id": "castello", "name": "Piazza Castello", "local": "Piazza Castello", "kind": "Square", "area": "Centro", "cat": "squares", "photo": "piazza-castello.jpg", "lat": 45.0705, "lng": 7.6862, "query": "Piazza Castello, Torino", "blurb": "The royal square. Start almost any walk here." },
+    { "id": "madama", "name": "Palazzo Madama", "local": "Palazzo Madama", "kind": "Palace and museum", "area": "Piazza Castello", "cat": "museums", "photo": "palazzo-madama.jpg", "lat": 45.0709, "lng": 7.6855, "query": "Palazzo Madama, Torino", "blurb": "A medieval castle wrapped in a baroque facade, in the middle of the square." },
+    { "id": "reale", "name": "Palazzo Reale", "local": "Palazzo Reale", "kind": "Royal palace", "area": "Piazza Castello", "cat": "sights", "photo": "palazzo-reale.jpg", "lat": 45.0725, "lng": 7.6856, "query": "Palazzo Reale, Torino", "blurb": "The Savoy residence. The rooms are an exercise in gold leaf." },
+    { "id": "subalpina", "name": "Galleria Subalpina", "local": "Galleria Subalpina", "kind": "Arcade", "area": "Piazza Castello", "cat": "squares", "photo": "galleria.jpg", "lat": 45.0704, "lng": 7.6848, "query": "Galleria Subalpina, Torino", "blurb": "A glass-roofed passage of marble, bookshops and cafés off the square." },
+    { "id": "sancarlo", "name": "Piazza San Carlo", "local": "Piazza San Carlo", "kind": "Square", "area": "Centro", "cat": "squares", "photo": "piazza-san-carlo.jpg", "lat": 45.0675, "lng": 7.6827, "query": "Piazza San Carlo, Torino", "blurb": "The city's drawing room. Twin churches, porticoes, and the evening passeggiata." },
+    { "id": "caffe", "name": "Caffè San Carlo", "local": "Caffè San Carlo", "kind": "Historic café", "area": "Piazza San Carlo", "cat": "cafes", "photo": "caffe-san-carlo.jpg", "lat": 45.0673, "lng": 7.6822, "query": "Caffè San Carlo, Torino", "blurb": "Red velvet, gilded stucco, and a bicerin if you ask for one." },
+    { "id": "egizio", "name": "Museo Egizio", "local": "Museo Egizio", "kind": "Museum", "area": "Centro", "cat": "museums", "photo": "egizio.jpg", "lat": 45.0683, "lng": 7.6844, "query": "Museo Egizio, Torino", "blurb": "The largest Egyptian collection outside Cairo, on Via Accademia delle Scienze." },
+    { "id": "albertina", "name": "Accademia Albertina", "local": "Accademia Albertina di Belle Arti", "kind": "Art academy", "area": "Via Po", "cat": "study", "photo": "albertina-rotonda.jpg", "lat": 45.0662, "lng": 7.6891, "query": "Accademia Albertina, Via Accademia Albertina, Torino", "blurb": "Founded in 1678. The round hall, La Rotonda di Talucchi, sits behind the neoclassical front." },
+    { "id": "unito", "name": "Università di Torino", "local": "Università degli Studi di Torino", "kind": "University", "area": "Via Po", "cat": "study", "lat": 45.0688, "lng": 7.6893, "query": "Università di Torino, Via Po, Torino", "blurb": "The historic university building runs along Via Po, a short walk from Piazza Castello." },
+    { "id": "polito", "name": "Politecnico di Torino", "local": "Politecnico di Torino", "kind": "University", "area": "Crocetta", "cat": "study", "lat": 45.0626, "lng": 7.6622, "query": "Politecnico di Torino, Corso Duca degli Abruzzi 24", "blurb": "The main engineering campus on Corso Duca degli Abruzzi." },
+    { "id": "granmadre", "name": "Gran Madre di Dio", "local": "Gran Madre di Dio", "kind": "Church", "area": "Borgo Po", "cat": "sights", "photo": "gran-madre.jpg", "lat": 45.0628, "lng": 7.6986, "query": "Gran Madre di Dio, Torino", "blurb": "A Roman temple facing the river, with the hill rising behind it." },
+    { "id": "vittorio", "name": "Piazza Vittorio Veneto", "local": "Piazza Vittorio Veneto", "kind": "Square", "area": "Along the Po", "cat": "squares", "photo": "piazza-vittorio.jpg", "lat": 45.0642, "lng": 7.6955, "query": "Piazza Vittorio Veneto, Torino", "blurb": "The long square that ends at the river. Café tables come out as soon as the rain stops." },
+    { "id": "palatina", "name": "Porta Palatina", "local": "Porta Palatina", "kind": "Roman gate", "area": "Quadrilatero", "cat": "sights", "photo": "porta-palatina.jpg", "lat": 45.0746, "lng": 7.6843, "query": "Porta Palatina, Torino", "blurb": "The Roman gate, two brick towers and a row of windows, still standing in the old grid." },
+    { "id": "superga", "name": "Basilica di Superga", "local": "Basilica di Superga", "kind": "Basilica and viewpoint", "area": "Superga", "cat": "sights", "photo": "superga.jpg", "suggest": "d", "lat": 45.0809, "lng": 7.7673, "query": "Basilica di Superga, Torino", "blurb": "On the hill east of the city. The tram is a ride; the view back to the Mole is the point." },
+    { "id": "valentino", "name": "Parco del Valentino", "local": "Parco del Valentino", "kind": "Park", "area": "Along the Po", "cat": "parks", "photo": "valentino.jpg", "lat": 45.0555, "lng": 7.688, "query": "Parco del Valentino, Torino", "blurb": "The long park on the river. Good for a slow afternoon." },
+    { "id": "borgo", "name": "Borgo Medievale", "local": "Borgo Medievale", "kind": "Reconstructed village", "area": "Parco del Valentino", "cat": "sights", "photo": "borgo.jpg", "suggest": "r", "lat": 45.0494, "lng": 7.6852, "query": "Borgo Medievale, Torino", "blurb": "A 19th-century rebuilding of a medieval village, on the riverbank." },
+    { "id": "mauto", "name": "Museo dell'Automobile", "local": "MAUTO", "kind": "Museum", "area": "Lingotto", "cat": "museums", "photo": "mauto.jpg", "suggest": "r", "lat": 45.0308, "lng": 7.6734, "query": "Museo Nazionale dell'Automobile, Torino", "blurb": "Italy's national car museum, south of the centre, in the city that built them." },
+    { "id": "masino", "name": "Regia Farmacia Masino", "local": "Regia Farmacia Masino", "kind": "Historic pharmacy", "area": "Centro", "cat": "streets", "photo": "farmacia-masino.jpg", "lat": 45.0675, "lng": 7.6828, "query": "Regia Farmacia Masino, Torino", "blurb": "A royal warrant on the door and a green cross. Not the on-duty rota — just a beautiful shopfront." },
+    { "id": "nuova", "name": "Porta Nuova", "local": "Stazione Porta Nuova", "kind": "Station", "area": "Centro", "cat": "streets", "photo": "porta-nuova.jpg", "lat": 45.061, "lng": 7.678, "query": "Torino Porta Nuova", "blurb": "The main station. Most arrivals start under this roof." },
+    { "id": "roma", "name": "Via Roma", "local": "Via Roma", "kind": "Street", "area": "Centro", "cat": "streets", "photo": "via-roma.jpg", "lat": 45.0683, "lng": 7.6832, "query": "Via Roma, Torino", "blurb": "The arcaded street between Piazza Castello and Piazza San Carlo." },
+    { "id": "bicerin", "name": "Caffè Al Bicerin", "local": "Caffè Al Bicerin", "kind": "Historic café", "area": "Quadrilatero", "cat": "cafes", "lat": 45.0762364, "lng": 7.678984, "query": "Caffè Al Bicerin, Piazza della Consolata 5, Torino", "blurb": "The small café on Piazza della Consolata. The house drink is the bicerin: coffee, chocolate and cream." },
+    { "id": "baratti", "name": "Baratti & Milano", "local": "Caffè Baratti e Milano", "kind": "Historic café", "area": "Galleria Subalpina", "cat": "cafes", "lat": 45.0697211, "lng": 7.6866058, "query": "Baratti e Milano, Galleria Subalpina, Torino", "blurb": "Opened in 1875 inside the Galleria Subalpina, with a front on Piazza Castello." },
+    { "id": "mulassano", "name": "Caffè Mulassano", "local": "Caffè Mulassano", "kind": "Historic café", "area": "Piazza Castello", "cat": "cafes", "lat": 45.0698461, "lng": 7.6868085, "query": "Caffè Mulassano, Piazza Castello 15, Torino", "blurb": "The art-nouveau bar at Piazza Castello 15. The tramezzino is associated with this room." },
+    { "id": "fiorio", "name": "Caffè Fiorio", "local": "Caffè Fiorio", "kind": "Historic café", "area": "Via Po", "cat": "cafes", "lat": 45.0693622, "lng": 7.6880809, "query": "Caffè Fiorio, Via Po 8, Torino", "blurb": "The historic café on Via Po 8, a short walk from the university building." },
+    { "id": "elena", "name": "Caffè Elena", "local": "Caffè Elena", "kind": "Historic café", "area": "Piazza Vittorio", "cat": "cafes", "lat": 45.0660998, "lng": 7.6944817, "query": "Caffè Elena, Piazza Vittorio Veneto, Torino", "blurb": "On Piazza Vittorio Veneto since the late 19th century. The square outside fills up in the evening." },
+    { "id": "caffetorino", "name": "Caffè Torino", "local": "Caffè Torino", "kind": "Historic café", "area": "Piazza San Carlo", "cat": "cafes", "lat": 45.0675336, "lng": 7.6817924, "query": "Caffè Torino, Piazza San Carlo, Torino", "blurb": "On Piazza San Carlo. The bull set into the pavement outside is the café’s mark." },
+    { "id": "gam", "name": "GAM", "local": "Galleria Civica d'Arte Moderna", "kind": "Art museum", "area": "Crocetta", "cat": "galleries", "lat": 45.0651699, "lng": 7.6691784, "query": "GAM Galleria d'Arte Moderna, Via Magenta 31, Torino", "blurb": "The city’s gallery of modern and contemporary art, Via Magenta 31. Published hours close it on Mondays; confirm on the site before you go." },
+    { "id": "agnelli", "name": "Pinacoteca Agnelli", "local": "Pinacoteca Agnelli", "kind": "Art museum", "area": "Lingotto", "cat": "galleries", "suggest": "r", "lat": 45.0330358, "lng": 7.6659645, "query": "Pinacoteca Agnelli, Via Nizza 230, Torino", "blurb": "The Agnelli picture gallery on the Lingotto, Via Nizza 230. It is south of the centre, so the sensible trip is by transit." },
+    { "id": "sandretto", "name": "Fondazione Sandretto", "local": "Fondazione Sandretto Re Rebaudengo", "kind": "Contemporary art", "area": "Borgo San Paolo", "cat": "galleries", "suggest": "r", "lat": 45.0573955, "lng": 7.6523348, "query": "Fondazione Sandretto Re Rebaudengo, Via Modane 16, Torino", "blurb": "Contemporary art at Via Modane 16, west of the centre in Borgo San Paolo." },
+    { "id": "quadri", "name": "Quadrilatero Romano", "local": "Quadrilatero Romano", "kind": "Evening streets", "area": "Centro", "cat": "night", "lat": 45.0753343, "lng": 7.6797349, "query": "Quadrilatero Romano, Torino", "blurb": "The oldest grid. Wine bars and cocktail bars on the pedestrian streets, inside the patrolled centre." },
+    { "id": "sansalvario", "name": "San Salvario", "local": "San Salvario", "kind": "Evening streets", "area": "Via Madama Cristina", "cat": "night", "lat": 45.0556994, "lng": 7.6814922, "query": "Via Madama Cristina, Torino", "blurb": "Busy at night along Via Madama Cristina. Leave the side streets after midnight." },
+    { "id": "santagiulia", "name": "Piazza Santa Giulia", "local": "Piazza Santa Giulia", "kind": "Evening square", "area": "Vanchiglia", "cat": "night", "lat": 45.0698763, "lng": 7.6993792, "query": "Piazza Santa Giulia, Torino", "blurb": "The student evening square in Vanchiglia, near the university buildings on this side of the Po." },
+    { "id": "murazzi", "name": "Murazzi del Po", "local": "Murazzi del Po", "kind": "River arches", "area": "Along the Po", "cat": "night", "lat": 45.0599815, "lng": 7.6926547, "query": "Murazzi del Po, Torino", "blurb": "The arches along the Po. The old club rooms are mostly aperitivo and dinner now." },
+    { "id": "carlina", "name": "Piazza Carlina", "local": "Piazza Carlo Emanuele II", "kind": "Evening square", "area": "Centro", "cat": "night", "lat": 45.0663374, "lng": 7.6889765, "query": "Piazza Carlina, Torino", "blurb": "Piazza Carlo Emanuele II, still called Piazza Carlina. Aperitivo and dinner around the square." },
+    { "id": "hiroshima", "name": "Hiroshima Mon Amour", "local": "Hiroshima Mon Amour", "kind": "Live music", "area": "Lingotto", "cat": "night", "suggest": "r", "lat": 45.0280625, "lng": 7.6530839, "query": "Hiroshima Mon Amour, Via Carlo Bossoli 83, Torino", "blurb": "A long-running live-music room at Via Carlo Bossoli 83. The diary of concerts stays on the venue, not here." },
+    { "id": "centralino", "name": "Centralino", "local": "Centralino", "kind": "Club", "area": "Via delle Rosine", "cat": "night", "lat": 45.064557, "lng": 7.6909725, "query": "Centralino, Via delle Rosine 16a, Torino", "blurb": "The historic club on Via delle Rosine, a short walk from Piazza Vittorio." },
+    { "id": "milk", "name": "Milk", "local": "Milk", "kind": "Club", "area": "Via Paolo Sacchi", "cat": "night", "lat": 45.0553056, "lng": 7.6721655, "query": "Milk, Via Paolo Sacchi 65, Torino", "blurb": "The club at Via Paolo Sacchi 65, near Porta Nuova. TOlove notes university nights on Fridays." }
+  ],
+  "walks": [
+    {
+      "id": "portici",
+      "title": "Under the porticoes",
+      "minutes": 40,
+      "photo": "via-roma.jpg",
+      "blurb": "Stay dry. From the royal square, through the marble gallery, down Via Roma to the cafés of San Carlo.",
+      "stops": [
+        { "name": "Piazza Castello", "lat": 45.0705, "lng": 7.6862 },
+        { "name": "Galleria Subalpina", "lat": 45.0704, "lng": 7.6848 },
+        { "name": "Via Roma", "lat": 45.0683, "lng": 7.6832 },
+        { "name": "Piazza San Carlo", "lat": 45.0675, "lng": 7.6827 }
+      ]
+    },
+    {
+      "id": "po",
+      "title": "Across the Po",
+      "minutes": 35,
+      "photo": "gran-madre.jpg",
+      "blurb": "Out of the grid, down to the river, and up the steps of the Gran Madre.",
+      "stops": [
+        { "name": "Piazza Castello", "lat": 45.0705, "lng": 7.6862 },
+        { "name": "Piazza Vittorio Veneto", "lat": 45.0642, "lng": 7.6955 },
+        { "name": "Gran Madre di Dio", "lat": 45.0628, "lng": 7.6986 }
+      ]
+    },
+    {
+      "id": "academy",
+      "title": "To the Albertina",
+      "minutes": 20,
+      "photo": "albertina-facade.jpg",
+      "blurb": "A short walk to the art academy, past the university arcades of Via Po.",
+      "stops": [
+        { "name": "Piazza Castello", "lat": 45.0705, "lng": 7.6862 },
+        { "name": "Via Po", "lat": 45.0686, "lng": 7.691 },
+        { "name": "Accademia Albertina", "lat": 45.0662, "lng": 7.6891 }
+      ]
+    }
+  ],
+  "phrases": [
+    { "cat": "help", "en": "Help!", "local": "Aiuto!", "tr": "ah-YOO-toh" },
+    { "cat": "help", "en": "Please call an ambulance", "local": "Chiami un'ambulanza, per favore.", "tr": "KYAH-mee oon am-boo-LAHN-tsa, per fah-VOH-reh" },
+    { "cat": "help", "en": "I need a doctor", "local": "Ho bisogno di un medico.", "tr": "oh bee-ZOH-nyo dee oon MEH-dee-ko" },
+    { "cat": "help", "en": "Where is the nearest pharmacy?", "local": "Dov'è la farmacia più vicina?", "tr": "doh-VEH la far-ma-CHEE-ah pyoo vee-CHEE-na" },
+    { "cat": "help", "en": "I'm allergic to…", "local": "Sono allergico / allergica a…", "tr": "SOH-no al-LER-jee-ko / al-LER-jee-ka", "note": "Allergico if you're male, allergica if you're female." },
+    { "cat": "help", "en": "It hurts here", "local": "Mi fa male qui.", "tr": "mee fa MAH-leh kwee" },
+    { "cat": "everyday", "en": "Good morning / good day", "local": "Buongiorno", "tr": "bwon-JOR-no" },
+    { "cat": "everyday", "en": "Thank you", "local": "Grazie", "tr": "GRAH-tsyeh" },
+    { "cat": "everyday", "en": "Please / you're welcome", "local": "Prego", "tr": "PREH-go" },
+    { "cat": "everyday", "en": "Yes / No", "local": "Sì / No", "tr": "see / no" },
+    { "cat": "everyday", "en": "Excuse me", "local": "Mi scusi", "tr": "mee SKOO-zee", "note": "With friends: scusa." },
+    { "cat": "everyday", "en": "I don't speak Italian", "local": "Non parlo italiano.", "tr": "non PAR-lo ee-tah-LYAH-no" },
+    { "cat": "everyday", "en": "Do you speak English?", "local": "Parla inglese?", "tr": "PAR-la een-GLEH-zeh" },
+    { "cat": "around", "en": "Where is the metro?", "local": "Dov'è la metro?", "tr": "doh-VEH la MEH-tro" },
+    { "cat": "around", "en": "One ticket, please", "local": "Un biglietto, per favore.", "tr": "oon bee-LYET-to, per fah-VOH-reh" },
+    { "cat": "around", "en": "Please take me to this address", "local": "Mi porti a questo indirizzo, per favore.", "tr": "mee POR-tee a KWEH-sto een-dee-REET-tso" },
+    { "cat": "around", "en": "Where do I get off?", "local": "Dove scendo?", "tr": "DOH-veh SHEN-doh" },
+    { "cat": "food", "en": "The bill, please", "local": "Il conto, per favore.", "tr": "eel KON-to, per fah-VOH-reh" },
+    { "cat": "food", "en": "A glass of water, please", "local": "Un bicchiere d'acqua, per favore.", "tr": "oon bee-KYEH-reh DAH-kwa" },
+    { "cat": "food", "en": "A coffee, please", "local": "Un caffè, per favore.", "tr": "oon kaf-FEH", "note": "At the bar, coffee is drunk standing up, and it costs less." },
+    { "cat": "food", "en": "How much is it?", "local": "Quanto costa?", "tr": "KWAHN-to KOH-sta" }
+  ],
+  "emergency": {
+    "primary": { "n": "112", "label": "Any emergency", "note": "The European number. Free from any phone, even without credit." },
+    "othersNote": "Italian public numbers",
+    "others": [
+      { "n": "118", "en": "Ambulance" },
+      { "n": "113", "en": "Police" },
+      { "n": "115", "en": "Fire service" }
+    ]
+  },
+  "pharmacy": {
+    "kind": "search",
+    "query": "farmacia di turno Torino",
+    "photo": "farmacia-masino.jpg",
+    "note": "The on-duty rota is not connected yet. The map searches pharmacies on duty in Torino."
+  },
+  "hospitals": "Tonight's hospital rota isn't connected. For an ambulance call 118, or 112 for any emergency.",
+  "universities": [
+    "Università degli Studi di Torino",
+    "Politecnico di Torino",
+    "Accademia Albertina di Belle Arti"
+  ],
+  "uniPlace": {
+    "Università degli Studi di Torino": "unito",
+    "Politecnico di Torino": "polito",
+    "Accademia Albertina di Belle Arti": "albertina"
+  },
+  "checklist": [
+    ["uni", "Add your university"],
+    ["sos", "Open help once, so the numbers are familiar"],
+    ["phrases", "Learn five phrases"],
+    ["place", "Save a place"],
+    ["walk", "Walk under the porticoes"]
+  ],
+  "addressHint": "As you'd say it to a taxi driver",
+  "addressPlaceholder": "es. Via Po 17, Torino",
+  "life": {
+    "groups": [
+      {
+        "title": { "en": "Historic cafés", "el": "Ιστορικά καφέ" },
+        "body": {
+          "en": "The historic-café association treats Turin as a museum you can sit down in. The map has San Carlo, Al Bicerin, Baratti & Milano, Mulassano, Fiorio, Elena and Caffè Torino. Coffee at the bar costs less than coffee at a table. The member list stays on the association’s site.",
+          "el": "Η ένωση ιστορικών καφέ αντιμετωπίζει το Τορίνο σαν μουσείο όπου κάθεσαι. Στον χάρτη είναι τα San Carlo, Al Bicerin, Baratti & Milano, Mulassano, Fiorio, Elena και Caffè Torino. Ο καφές στον πάγκο κοστίζει λιγότερο από τον καφέ στο τραπέζι. Ο κατάλογος των μελών μένει στον ιστότοπο της ένωσης."
+        },
+        "links": [{ "title": "Caffè Storici", "url": "https://www.caffestorici.eu/caffe/" }],
+        "placeIds": ["caffe", "bicerin", "baratti", "mulassano", "fiorio", "elena", "caffetorino"]
+      },
+      {
+        "title": { "en": "Where to eat", "el": "Πού να φας" },
+        "body": {
+          "en": "Turismo Torino names agnolotti del plin, vitello tonnato, bagna cauda and brasato, with Piedmont wine. The restaurants under their search form are a random sample that changes daily, so they are not copied here.",
+          "el": "Το Turismo Torino αναφέρει agnolotti del plin, vitello tonnato, bagna càuda και brasato, με κρασί του Πεδεμοντίου. Τα εστιατόρια κάτω από τη φόρμα τους είναι τυχαίο δείγμα που αλλάζει κάθε μέρα, γι’ αυτό δεν αντιγράφονται εδώ."
+        },
+        "links": [{ "title": "Turismo Torino — Where to eat", "url": "https://turismotorino.org/en/visit/where-to-eat" }],
+        "placeIds": []
+      },
+      {
+        "title": { "en": "Food and wine events", "el": "Εκδηλώσεις φαγητού και κρασιού" },
+        "body": {
+          "en": "The calendar belongs to Turismo Torino. On 28 Sep 2026 their food-and-wine page listed Bagna Cauda Day in Turin from 20 to 29 November 2026, plus events outside the city. Dates move, so use their page.",
+          "el": "Το ημερολόγιο ανήκει στο Turismo Torino. Στις 28 Σεπ 2026 η σελίδα φαγητού και κρασιού έγραφε το Bagna Cauda Day στο Τορίνο από 20 ως 29 Νοεμβρίου 2026, και εκδηλώσεις έξω από την πόλη. Οι ημερομηνίες αλλάζουν, γι’ αυτό χρησιμοποίησε τη σελίδα τους."
+        },
+        "links": [{ "title": "Turismo Torino — Food & Wine", "url": "https://turismotorino.org/en/visit/events/food-and-wine" }],
+        "placeIds": []
+      },
+      {
+        "title": { "en": "Art galleries", "el": "Γκαλερί" },
+        "body": {
+          "en": "Three rooms with a published street address: GAM at Via Magenta 31, Pinacoteca Agnelli at the Lingotto on Via Nizza 230, and Fondazione Sandretto Re Rebaudengo at Via Modane 16. Opening hours stay on each site.",
+          "el": "Τρεις αίθουσες με δημοσιευμένη διεύθυνση: GAM στη Via Magenta 31, Pinacoteca Agnelli στο Lingotto στη Via Nizza 230, και Fondazione Sandretto Re Rebaudengo στη Via Modane 16. Το ωράριο μένει στον ιστότοπο της καθεμιάς."
+        },
+        "links": [
+          { "title": "GAM", "url": "https://www.gamtorino.it/en/welcome/where-we-are/" },
+          { "title": "Pinacoteca Agnelli", "url": "https://www.pinacoteca-agnelli.it/" }
+        ],
+        "placeIds": ["gam", "agnelli", "sandretto"]
+      },
+      {
+        "title": { "en": "Bars and night", "el": "Μπαρ και νύχτα" },
+        "body": {
+          "en": "TOlove describes the evening as Piazza Vittorio, the Quadrilatero, San Salvario, Vanchiglia around Piazza Santa Giulia, the Murazzi (now more aperitivo than clubs) and Piazza Carlina. In San Salvario stay on Via Madama Cristina and leave the side streets after midnight. Rooms with a street: Hiroshima Mon Amour at Via Carlo Bossoli 83, Centralino on Via delle Rosine, Milk at Via Paolo Sacchi 65. XCEED keeps the live club list and ticket prices. Tonight’s lineup is not copied here.",
+          "el": "Το TOlove περιγράφει το βράδυ ως Piazza Vittorio, το Quadrilatero, το San Salvario, τη Vanchiglia γύρω από την Piazza Santa Giulia, τα Murazzi (πια περισσότερο aperitivo παρά κλαμπ) και την Piazza Carlina. Στο San Salvario μείνε στη Via Madama Cristina και άφησε τα στενά μετά τα μεσάνυχτα. Αίθουσες με οδό: Hiroshima Mon Amour στη Via Carlo Bossoli 83, Centralino στη Via delle Rosine, Milk στη Via Paolo Sacchi 65. Το XCEED κρατά τη ζωντανή λίστα κλαμπ και τις τιμές εισιτηρίων. Το πρόγραμμα της βραδιάς δεν αντιγράφεται εδώ."
+        },
+        "links": [
+          { "title": "TOlove — Turin by night", "url": "https://www.tolove.it/blog/index.php/turin-by-night/" },
+          { "title": "XCEED — venues in Turin", "url": "https://xceed.me/en/torino/venues" }
+        ],
+        "placeIds": ["vittorio", "quadri", "sansalvario", "santagiulia", "murazzi", "carlina", "hiroshima", "centralino", "milk"]
+      }
+    ]
+  },
+  "cost": {
+    "rows": [
+      {
+        "label": { "en": "A student month, in euros", "el": "Ένας φοιτητικός μήνας, σε ευρώ" },
+        "value": {
+          "en": "The Politecnico puts a single room at about €400–600 a month, and says a shared room can cost about half of that. Food cooked at home, €200–300. The student public-transport pass, about €26. Utilities, about €70–100. These are their ranges for international students, not a quote for one flat.",
+          "el": "Το Politecnico βάζει ένα μονόκλινο δωμάτιο γύρω στα €400–600 τον μήνα και λέει ότι ένα κοινόχρηστο μπορεί να κοστίζει περίπου τα μισά. Φαγητό μαγειρεμένο στο σπίτι, €200–300. Η φοιτητική κάρτα συγκοινωνιών, περίπου €26. Κοινόχρηστα, περίπου €70–100. Είναι τα δικά τους εύρη για διεθνείς φοιτητές, όχι προσφορά για ένα συγκεκριμένο σπίτι."
+        },
+        "source": { "en": "Politecnico di Torino, practical information", "el": "Politecnico di Torino, πρακτικές πληροφορίες" }
+      },
+      {
+        "label": { "en": "One person, in pounds", "el": "Ένα άτομο, σε λίρες" },
+        "value": {
+          "en": "Wise’s Turin page, as published in 2026, puts common monthly costs for one person at about £1,411. On that page: a 1-bedroom in the centre about £637 (about £432–£777), outside the centre about £460; groceries about £269; eating out about £147; a monthly transport pass about £33 and a single ticket about £2; utilities about £177 plus internet about £22. Without rent, about £774. Left in pounds, as Wise prints them.",
+          "el": "Η σελίδα της Wise για το Τορίνο, όπως είναι δημοσιευμένη το 2026, βάζει τα συνηθισμένα μηνιαία έξοδα ενός ατόμου γύρω στις £1.411. Εκεί: γκαρσονιέρα στο κέντρο περίπου £637 (περίπου £432–£777), έξω από το κέντρο περίπου £460· ψώνια περίπου £269· φαγητό έξω περίπου £147· μηνιαία κάρτα συγκοινωνιών περίπου £33 και ένα εισιτήριο περίπου £2· κοινόχρηστα περίπου £177 συν ίντερνετ περίπου £22. Χωρίς ενοίκιο, περίπου £774. Μένουν σε λίρες, όπως τις τυπώνει η Wise."
+        },
+        "source": { "en": "Wise, cost of living in Turin", "el": "Wise, κόστος ζωής στο Τορίνο" }
+      },
+      {
+        "label": { "en": "A household, in euros", "el": "Ένα νοικοκυριό, σε ευρώ" },
+        "value": {
+          "en": "The Turin chamber of commerce, presenting its 2025 household survey on 6 May 2026, put average monthly spending of resident families at €2,616, almost unchanged from 2024. That figure is a household, not a student room.",
+          "el": "Το εμπορικό επιμελητήριο του Τορίνο, παρουσιάζοντας την έρευνα νοικοκυριών του 2025 στις 6 Μαΐου 2026, έβαλε τη μέση μηνιαία δαπάνη των οικογενειών που μένουν στην πόλη στα €2.616, σχεδόν αμετάβλητη από το 2024. Το νούμερο είναι νοικοκυριό, όχι φοιτητικό δωμάτιο."
+        },
+        "source": { "en": "Camera di commercio di Torino", "el": "Camera di commercio di Torino" }
+      },
+      {
+        "label": { "en": "Prices are still moving", "el": "Οι τιμές ακόμη κινούνται" },
+        "value": {
+          "en": "In July 2026 the City statistics office put the consumer-price index at 103.2, with 2025 as 100. The same release, as reported by ANSA, was +0.4% on June and +2.9% on July 2025. Housing and energy did much of that. The ranges above move with it.",
+          "el": "Τον Ιούλιο 2026 η στατιστική υπηρεσία του Δήμου έβαλε τον δείκτη τιμών καταναλωτή στο 103,2, με βάση το 2025 = 100. Η ίδια ανακοίνωση, όπως τη μετέφερε το ANSA, ήταν +0,4% σε σχέση με τον Ιούνιο και +2,9% σε σχέση με τον Ιούλιο 2025. Σπίτι και ενέργεια έκαναν μεγάλο μέρος της ανόδου. Τα εύρη πιο πάνω κινούνται μαζί της."
+        },
+        "source": { "en": "Città di Torino, statistics office, July 2026", "el": "Δήμος Τορίνο, στατιστική υπηρεσία, Ιούλιος 2026" }
+      },
+      {
+        "label": { "en": "Where to search a room", "el": "Πού να ψάξεις δωμάτιο" },
+        "value": {
+          "en": "HousingAnywhere’s Turin page states an average rent around €940, usually €800–€1,100, on its own marketplace. Erasmus Play is a second student-housing search. Listings on either site are adverts and they change, so none is copied here. Safety of the area still comes before closeness or price.",
+          "el": "Η σελίδα της HousingAnywhere για το Τορίνο γράφει μέσο ενοίκιο γύρω στα €940, συνήθως €800–€1.100, στη δική της αγορά. Το Erasmus Play είναι δεύτερη αναζήτηση φοιτητικής στέγης. Οι αγγελίες και στα δύο είναι διαφημίσεις και αλλάζουν, γι’ αυτό καμία δεν αντιγράφεται εδώ. Η ασφάλεια της περιοχής έρχεται πριν από την απόσταση ή την τιμή."
+        },
+        "source": { "en": "HousingAnywhere and Erasmus Play", "el": "HousingAnywhere και Erasmus Play" }
+      }
+    ],
+    "links": [
+      { "title": "Politecnico di Torino", "url": "https://www.polito.it/en/education/international-students/practical-information/cost-of-living" },
+      { "title": "Wise", "url": "https://wise.com/gb/cost-of-living/italy/turin" },
+      { "title": "Camera di commercio", "url": "https://www.to.camcom.it/sites/default/files/studi-statistica/Osservatorio_spese_famiglie_2026_CS.pdf" },
+      { "title": "Città di Torino", "url": "https://www.comune.torino.it/argomenti/comune/statistica" },
+      { "title": "ANSA, July 2026 prices", "url": "https://www.ansa.it/piemonte/notizie/comune_di_torino/2026/08/12/prezzi-al-consumo-luglio-a-torino-segna-0.4_21be06f8-2630-4a40-8f7a-5f37455b4bca.html" },
+      { "title": "HousingAnywhere", "url": "https://housinganywhere.com/s/Turin--Italy?suitableFor=students" },
+      { "title": "Erasmus Play", "url": "https://erasmusplay.com/en/torino.html" }
+    ]
+  }
+}
