@@ -1,0 +1,17 @@
+{
+  "name": "ingest-pharmacies",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --no-warnings --test test/parser.test.ts",
+    "typecheck": "tsc -p .",
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "@types/node": "^26.6.3",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.0.0"
+  }
+}

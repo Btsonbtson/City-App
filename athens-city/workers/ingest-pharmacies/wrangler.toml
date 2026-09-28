@@ -1,0 +1,20 @@
+name = "athens-ingest-pharmacies"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+# Crons are in UTC. Athens is UTC+3 (summer) / UTC+2 (winter), so each local
+# slot is listed for both offsets; the worker itself skips runs before 08:10
+# local time, and repeated runs on the same day are harmless (atomic replace +
+# change detection). Local targets: ~08:20, ~14:30, ~20:30.
+[triggers]
+crons = ["20 5,6 * * *", "30 11,12 * * *", "30 17,18 * * *"]
+
+[vars]
+SOURCE_ID = "gr.fsa.efimeries"
+CITY_ID = "athens"
+MIN_ITEMS = "20"
+GEOCODE_BATCH = "15"
+CONTACT_EMAIL = "CHANGE-ME@example.com"
+
+# Secrets (set with `wrangler secret put <NAME>`):
+#   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, RUN_TOKEN
