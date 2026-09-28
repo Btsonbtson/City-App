@@ -58,6 +58,12 @@ const I18N = {
     sources: "Sources", onThisPhone: "On this phone", offlineLead: "Saves this city's text, and the photographs that already live in its folder. Pictures gathered from the web still need a connection.",
     saveOffline: "Download for offline", savedOffline: "Saved on this phone", yourFolder: "Your city folder",
     addFolder: "Add a city folder", folderLead: "Choose a folder that contains city.json and, if you have them, photographs.",
+    cityLooking: "Looking up the city of your university…",
+    uniCityTag: "Your university",
+    uniCityOther: "In {country}",
+    addCity: "Add a city that is not in the list",
+    addCityPh: "City name",
+    addCityGo: "Add this city",
     folderNeedsJson: "That folder needs a city.json file.", folderBadJson: "city.json could not be read.",
     folderNeedsName: "city.json needs a name.", folderAdded: "Folder added", yourFolderTag: "Your folder"
   },
@@ -117,6 +123,12 @@ const I18N = {
     sources: "Πηγές", onThisPhone: "Σε αυτό το τηλέφωνο", offlineLead: "Αποθηκεύει το κείμενο της πόλης και τις φωτογραφίες που είναι ήδη στον φάκελό της. Όσες μαζεύτηκαν από τον ιστό θέλουν σύνδεση.",
     saveOffline: "Λήψη για χωρίς δίκτυο", savedOffline: "Αποθηκεύτηκε σε αυτό το τηλέφωνο", yourFolder: "Ο δικός σου φάκελος",
     addFolder: "Πρόσθεσε φάκελο πόλης", folderLead: "Διάλεξε έναν φάκελο που έχει city.json και, αν έχεις, φωτογραφίες.",
+    cityLooking: "Ψάχνω την πόλη του πανεπιστημίου…",
+    uniCityTag: "Το πανεπιστήμιό σου",
+    uniCityOther: "{country}",
+    addCity: "Πρόσθεσε πόλη που δεν είναι στη λίστα",
+    addCityPh: "Όνομα πόλης",
+    addCityGo: "Πρόσθεσε την πόλη",
     folderNeedsJson: "Ο φάκελος χρειάζεται αρχείο city.json.", folderBadJson: "Το city.json δεν διαβάστηκε.",
     folderNeedsName: "Το city.json χρειάζεται όνομα.", folderAdded: "Ο φάκελος προστέθηκε", yourFolderTag: "Ο φάκελός σου"
   },
@@ -375,7 +387,15 @@ function paintCountry() {
   }
   paintCountryList();
   paintLang();
-  document.getElementById("gateStatus").textContent = "";
+  const status = document.getElementById("gateStatus");
+  if (status && status.textContent !== t("cityLooking")) status.textContent = "";
+  if (state.countryCode) selectCountry(state.countryCode);
+  else {
+    const form = document.getElementById("cityAddForm");
+    if (form) form.hidden = true;
+  }
+  paintUniCity();
+  ensureUniLookup();
 }
 function paintCountryList() {
   const q = (document.getElementById("countrySearch").value || "").trim().toLowerCase();
@@ -387,9 +407,60 @@ function paintCountryList() {
     .map((x) => `<button type="button" data-pick-country="${x.c.code}" role="option"><img class="flag" alt="" src="${flagSrc(x.c.code)}"><span>${esc(x.label)}</span></button>`)
     .join("");
 }
+function foldPlace(s) {
+  return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "");
+}
+function sameCity(city, meta) {
+  const names = [city.name, city.wiki, city.id].map(foldPlace).filter(Boolean);
+  const wanted = [meta.name, meta.wiki, meta.id].map(foldPlace).filter(Boolean);
+  return wanted.some((w) => names.includes(w));
+}
+function citySlug(name) {
+  const base = (name || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40);
+  return base || "city";
+}
+function countryBucket(code) {
+  let country = state.world.countries.find((c) => c.code === code);
+  if (!country) {
+    country = { code, lang: "en", tz: "UTC", cities: [] };
+    state.world.countries.push(country);
+  }
+  return country;
+}
+function ensureListed(country, meta) {
+  const hit = country.cities.find((c) => sameCity(c, meta));
+  if (hit) return hit;
+  const id = country.cities.some((c) => c.id === meta.id) ? meta.id + "-" + country.code.toLowerCase() : meta.id;
+  const city = { ...meta, id };
+  country.cities.unshift(city);
+  return city;
+}
+function paintUniCity() {
+  const box = document.getElementById("uniCityOffer");
+  const place = state.uniPlace;
+  if (!box) return;
+  if (!place || state.city) { box.hidden = true; box.innerHTML = ""; return; }
+  box.hidden = false;
+  const here = state.countryCode === place.countryCode;
+  const note = here ? t("uniCityTag") : t("uniCityOther", { country: countryName(place.countryCode) });
+  box.innerHTML = `<button type="button" class="uni-city" data-uni-city="1"><span>${esc(place.city.name)}</span><small>${esc(note)}</small></button>`;
+}
+function paintCityAdd() {
+  const form = document.getElementById("cityAddForm");
+  if (!form) return;
+  form.hidden = !state.countryCode;
+  const label = document.getElementById("cityAddLabel");
+  const input = document.getElementById("cityAddInput");
+  const go = document.getElementById("cityAddGo");
+  if (label) label.textContent = t("addCity");
+  if (input) input.placeholder = t("addCityPh");
+  if (go) go.textContent = t("addCityGo");
+}
 function selectCountry(code) {
   state.countryCode = code;
-  const country = state.world.countries.find((c) => c.code === code);
+  const country = countryBucket(code);
+  const place = state.uniPlace;
+  if (place && place.countryCode === code) ensureListed(country, place.city);
   const btn = document.getElementById("countryBtn");
   btn.innerHTML = `<img class="flag" alt="" src="${flagSrc(code)}"><span>${esc(countryName(code))}</span>`;
   btn.setAttribute("aria-expanded", "false");
@@ -397,12 +468,19 @@ function selectCountry(code) {
   document.getElementById("countryLead").textContent = t("pickCity");
   const box = document.getElementById("cityList");
   box.hidden = false;
-  box.innerHTML = country.cities.map((c) =>
-    `<button type="button" data-city="${esc(c.id)}"><b>${esc(c.name)}</b><small>${c.pack ? esc(t("folderPics", { n: "" }).replace(/^\s*/, "")) : ""}</small></button>`).join("");
+  let cities = country.cities.slice();
+  if (place && place.countryCode === code) {
+    const i = cities.findIndex((c) => sameCity(c, place.city));
+    if (i > 0) cities.unshift(cities.splice(i, 1)[0]);
+  }
+  box.innerHTML = cities.map((c) =>
+    `<button type="button" data-city="${esc(c.id)}"></button>`).join("");
   box.querySelectorAll("button").forEach((b) => {
     const city = country.cities.find((c) => c.id === b.dataset.city);
     const saved = offlineIndex().includes(city.id) || (city.pack && offlineIndex().includes(city.pack));
-    const tags = [city.pack ? t("folderTag") : "", saved ? t("savedOffline") : ""].filter(Boolean);
+    const fromUni = place && place.countryCode === code && sameCity(city, place.city);
+    const tags = [fromUni ? t("uniCityTag") : "", city.pack ? t("folderTag") : "", saved ? t("savedOffline") : ""].filter(Boolean);
+    if (fromUni) b.classList.add("uni-city");
     b.innerHTML = `<span>${esc(city.name)}</span>${tags.length ? `<small>${esc(tags.join(" · "))}</small>` : ""}`;
   });
   ownIndex().filter((c) => !c.countryCode || c.countryCode === code).forEach((c) => {
@@ -412,6 +490,8 @@ function selectCountry(code) {
     b.innerHTML = `<span>${esc(c.name)}</span><small>${esc(t("yourFolderTag"))}</small>`;
     box.appendChild(b);
   });
+  paintCityAdd();
+  paintUniCity();
 }
 
 function phraseList(spoken) {
@@ -447,6 +527,168 @@ function kindOf(description) {
   if (/university|academy/.test(d)) return "study";
   if (/café|cafe|market|restaurant/.test(d)) return "cafes";
   return "sights";
+}
+async function wd(params) {
+  const u = new URL("https://www.wikidata.org/w/api.php");
+  Object.entries({ origin: "*", format: "json", ...params }).forEach(([k, v]) => u.searchParams.set(k, String(v)));
+  const res = await fetch(u);
+  if (!res.ok) throw new Error("wd");
+  return res.json();
+}
+function claimId(entity, prop) {
+  const value = entity?.claims?.[prop]?.[0]?.mainsnak?.datavalue?.value;
+  return value && value.id;
+}
+function claimIds(entity, prop) {
+  return (entity?.claims?.[prop] || []).map((row) => row?.mainsnak?.datavalue?.value?.id).filter(Boolean);
+}
+function coordOf(entity) {
+  const value = entity?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
+  if (!value || typeof value.latitude !== "number") return null;
+  return { lat: value.latitude, lng: value.longitude };
+}
+async function wdEntities(ids) {
+  const data = await wd({
+    action: "wbgetentities", ids: ids.join("|"),
+    props: "labels|descriptions|claims|sitelinks", languages: "en|el"
+  });
+  return data.entities || {};
+}
+const CITY_KIND = new Set(["Q515", "Q1549591", "Q3957", "Q7930989", "Q15284", "Q1637706", "Q1093829", "Q174844", "Q262166", "Q747074", "Q15078955"]);
+const COUNTRY_ALIAS = { Q21: "GB", Q22: "GB", Q25: "GB", Q26: "GB" };
+async function countryCodeOf(id, depth) {
+  if (!id || depth > 2) return "";
+  if (COUNTRY_ALIAS[id]) return COUNTRY_ALIAS[id];
+  const bag = await wdEntities([id]);
+  const item = bag[id];
+  if (!item || item.missing) return "";
+  const iso = item.claims?.P297?.[0]?.mainsnak?.datavalue?.value;
+  if (typeof iso === "string" && /^[A-Za-z]{2}$/.test(iso)) return iso.toUpperCase();
+  const parent = claimId(item, "P17");
+  if (parent && parent !== id) return countryCodeOf(parent, depth + 1);
+  return "";
+}
+async function cityItem(startId) {
+  let id = startId;
+  const seen = new Set();
+  for (let i = 0; i < 4 && id && !seen.has(id); i++) {
+    seen.add(id);
+    const bag = await wdEntities([id]);
+    const item = bag[id];
+    if (!item || item.missing) return null;
+    if (claimIds(item, "P31").some((kind) => CITY_KIND.has(kind))) return item;
+    id = claimId(item, "P131");
+  }
+  return null;
+}
+function labelOf(entity) {
+  return entity?.labels?.[state.lang]?.value || entity?.labels?.en?.value || "";
+}
+async function locateUniversity(name) {
+  const langs = [...new Set([state.lang || "en", "en"])];
+  const hits = [];
+  for (const language of langs) {
+    const search = await wd({ action: "wbsearchentities", search: name, language, type: "item", limit: "5" });
+    (search.search || []).forEach((hit) => hits.push(hit));
+  }
+  const asked = name.trim().toLowerCase();
+  const ranked = [...new Map(hits.map((hit) => [hit.id, hit])).values()].sort((a, b) => {
+    const score = (hit) => {
+      const label = (hit.label || "").toLowerCase();
+      if (label === asked) return 0;
+      if (label.startsWith(asked)) return 1;
+      if (/department|faculty|school of/.test((hit.description || "").toLowerCase())) return 3;
+      return 2;
+    };
+    return score(a) - score(b);
+  }).slice(0, 4);
+  if (!ranked.length) return null;
+  const bag = await wdEntities(ranked.map((hit) => hit.id));
+  const uni = ranked.map((hit) => bag[hit.id]).find((item) => item && (claimId(item, "P159") || claimId(item, "P131") || claimId(item, "P276")));
+  if (!uni) return null;
+  let place = null;
+  for (const prop of ["P159", "P131", "P276"]) {
+    const start = claimId(uni, prop);
+    if (!start) continue;
+    place = await cityItem(start);
+    if (place) break;
+  }
+  if (!place) return null;
+  const countryCode = await countryCodeOf(claimId(place, "P17") || claimId(uni, "P17"), 0);
+  const point = coordOf(place) || coordOf(uni);
+  const wikiTitle = place.sitelinks?.enwiki?.title || place.labels?.en?.value || "";
+  const cityName = labelOf(place) || wikiTitle;
+  if (!countryCode || !point || !cityName) return null;
+  const country = countryBucket(countryCode);
+  const meta = {
+    id: citySlug(wikiTitle || cityName),
+    name: cityName,
+    lat: point.lat,
+    lng: point.lng,
+    wiki: wikiTitle || cityName,
+    tz: country.tz
+  };
+  return { countryCode, city: ensureListed(country, meta) };
+}
+async function wikiPlace(name, country) {
+  const data = await wiki({
+    action: "query", generator: "search", gsrsearch: `${name} ${countryName(country.code)}`, gsrlimit: "5",
+    prop: "coordinates|description"
+  });
+  const pages = Object.values(data.query?.pages || {}).filter((p) => (p.coordinates || [])[0]);
+  const wanted = foldPlace(name);
+  const page = pages.find((p) => foldPlace(p.title).startsWith(wanted)) || pages[0];
+  if (!page) return null;
+  const coord = page.coordinates[0];
+  const title = page.title.replace(/,.*/, "");
+  return ensureListed(country, {
+    id: citySlug(title),
+    name: title,
+    lat: coord.lat,
+    lng: coord.lon,
+    wiki: page.title,
+    tz: country.tz
+  });
+}
+function ensureUniLookup() {
+  const name = (state.uniName || "").trim();
+  if (!name || state.uniLookup === name || state.city) return;
+  state.uniLookup = name;
+  state.uniPlace = null;
+  const status = document.getElementById("gateStatus");
+  if (status) status.textContent = t("cityLooking");
+  locateUniversity(name).then((place) => {
+    if ((state.uniName || "").trim() !== name || state.city) return;
+    state.uniPlace = place;
+    if (status && status.textContent === t("cityLooking")) status.textContent = "";
+    paintUniCity();
+    if (place && state.countryCode === place.countryCode) selectCountry(state.countryCode);
+  }).catch(() => {
+    if (status && status.textContent === t("cityLooking")) status.textContent = "";
+  });
+}
+async function openUniCity() {
+  const place = state.uniPlace;
+  if (!place) return;
+  if (state.countryCode !== place.countryCode) selectCountry(place.countryCode);
+  else ensureListed(countryBucket(place.countryCode), place.city);
+  await enterCity(place.city.id);
+}
+async function addTypedCity(raw) {
+  const name = (raw || "").trim();
+  const country = state.countryCode ? countryBucket(state.countryCode) : null;
+  if (!name || !country) return;
+  const known = country.cities.find((c) => sameCity(c, { name, wiki: name }));
+  if (known) { await enterCity(known.id); return; }
+  const status = document.getElementById("gateStatus");
+  if (status) status.textContent = t("gathering", { city: name });
+  try {
+    const city = await wikiPlace(name, country);
+    if (!city) throw new Error("city");
+    await enterCity(city.id);
+  } catch {
+    if (status) status.textContent = t("couldntOpen");
+  }
 }
 async function crawlCity(country, meta) {
   const leadData = await wiki({
@@ -647,8 +889,14 @@ document.getElementById("nameForm").addEventListener("submit", (e) => {
   localStorage.setItem("cg:uni", uni);
   localStorage.setItem("cg:faculty", faculty);
   state.countryCode = "";
+  state.uniLookup = "";
+  state.uniPlace = null;
   state.goCountry = true;
   paintCountry();
+});
+document.getElementById("cityAddForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  addTypedCity(document.getElementById("cityAddInput").value);
 });
 document.getElementById("editName").addEventListener("click", paintWelcome);
 document.getElementById("countryBtn").addEventListener("click", () => {
@@ -663,6 +911,7 @@ document.addEventListener("click", (e) => {
   if (lang) { setLang(lang.dataset.lang); return; }
   const country = e.target.closest("[data-pick-country]");
   if (country) { selectCountry(country.dataset.pickCountry); return; }
+  if (e.target.closest("[data-uni-city]")) { openUniCity(); return; }
   if (!e.target.closest(".picker")) {
     document.getElementById("countryPanel").hidden = true;
     document.getElementById("countryBtn").setAttribute("aria-expanded", "false");

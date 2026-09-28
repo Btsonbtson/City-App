@@ -342,7 +342,7 @@ async function gatherCampus() {
   try { page = await wikiFind(`${name} ${city.name}`); } catch { page = null; }
   if (page && !wikiPageFits(page, name)) page = null;
   if (faculty) {
-    try { facultyPage = await wikiFind(`${faculty} ${name}`); } catch { facultyPage = null; }
+    try { facultyPage = await wikiFind(`${faculty} ${name} ${city.name}`); } catch { facultyPage = null; }
   }
   try { claims = await wikiDataClaims(page?.pageprops?.wikibase_item); } catch { claims = {}; }
   const coord = claimValue(claims, "P625");

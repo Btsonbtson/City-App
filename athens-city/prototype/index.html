@@ -78,6 +78,7 @@ h1, h2, h3, p { margin: 0; }
 #countryList button:hover, .city-list button:hover { background: rgba(255,255,255,.06); }
 .city-list { margin: 8px 28px 20px; max-width: 520px; display: grid; }
 .city-list button { border: 1px solid rgba(244,239,230,.18); font-family: var(--serif); font-size: 1.45rem; }
+.city-list button.uni-city { border-color: #e7c27a; }
 .city-list small { font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.04em; color: #e7c27a; }
 #editName { margin: 0 28px 24px; }
 
@@ -289,6 +290,7 @@ h1, h2, h3, p { margin: 0; }
   <section id="stepCountry" hidden>
     <h1 id="helloTitle"></h1>
     <p class="gate-lead" id="countryLead"></p>
+    <div id="uniCityOffer" class="city-list" hidden></div>
     <div class="picker">
       <button type="button" class="country-btn" id="countryBtn" aria-expanded="false" aria-haspopup="listbox"></button>
       <div id="countryPanel" class="country-panel" hidden>
@@ -297,6 +299,11 @@ h1, h2, h3, p { margin: 0; }
       </div>
     </div>
     <div id="cityList" class="city-list" hidden></div>
+    <form id="cityAddForm" class="name-form" hidden>
+      <label for="cityAddInput" id="cityAddLabel"></label>
+      <input id="cityAddInput" maxlength="80" autocomplete="off">
+      <button class="btn pale" type="submit" id="cityAddGo"></button>
+    </form>
     <p id="gateStatus"></p>
     <button type="button" class="continue" id="addFolder" data-add-folder></button>
     <input id="folderInput" type="file" accept=".json,image/*" webkitdirectory directory multiple hidden>
